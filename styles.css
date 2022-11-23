@@ -13,8 +13,8 @@ body{
   padding:20px;
  }
 .main{
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: auto;
   box-shadow: 3px 6px 10px 0px rgba(207,197,197,0.47);
   border-radius: 5px;
   overflow: hidden;
@@ -30,7 +30,7 @@ body{
 .left{
   display: inline-block;
   height: 100%;
-  width: 50%;
+  width: 100%;
   vertical-align: top;
   background-color: #2ab2af;
   padding: 30px;
@@ -38,7 +38,7 @@ body{
 .right{
   display: inline-block;
   height: 100%;
-  width: 50%;
+  width: 100%;
   vertical-align: top;
   background-color: #26C9B8;
   padding: 30px;
@@ -92,4 +92,14 @@ ul{
   list-style: none;
   line-height: 1.3rem;
   opacity: 0.6;
+}
+
+@media (min-width: 576px) {
+  .main{
+      height: 400px;
+      width: 600px;
+  }
+  .left, .right {
+    width: 50%;
+  }
 }
